@@ -1,0 +1,55 @@
+.contact_bar_wrapper {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 0 !important;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.contact_bar {
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.line {
+    width: 1px;
+    height: 180px;
+    background: var(--light-slate);
+    margin-top: 20px;
+    background-color: black;
+}
+
+.email {
+    font-family: var(--font-sans);
+    font-size: var(--fz-sm);
+    writing-mode: vertical-rl;
+    letter-spacing: 1px;
+    margin: 0;
+    cursor: pointer;
+    transition: var(--transition);
+    color: black;
+}
+
+.icon {
+    margin-top: 15px;
+    cursor: pointer;
+    transition: var(--transition);
+    color: black;
+}
+
+.email:hover {
+    color: var(--green);
+    margin-bottom: 3px;
+}
+
+.icon:hover {
+    color: var(--green);
+    transform: translateY(-3px);
+}
